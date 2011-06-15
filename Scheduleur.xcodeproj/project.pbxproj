@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B61FFDF213A8697D00E8BED0 /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B61FFDF113A8697D00E8BED0 /* TapkuLibrary.bundle */; };
+		B660C7DA13A86AFB001B383B /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B660C7D913A86AFB001B383B /* libTapkuLibrary.a */; };
+		B660C7DC13A86AFB001B383B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B660C7DB13A86AFB001B383B /* MapKit.framework */; };
+		B6A9734613A9491400948618 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734413A9491400948618 /* Default.png */; };
+		B6A9734713A9491400948618 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734513A9491400948618 /* Default@2x.png */; };
+		B6A9734913A94AD600948618 /* gear_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734813A94AD500948618 /* gear_icon.png */; };
+		B6A9734B13A94AED00948618 /* gear_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734A13A94AED00948618 /* gear_icon@2x.png */; };
+		B6B7A122139E65D5004526E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B7A121139E65D5004526E4 /* UIKit.framework */; };
+		B6B7A124139E65D5004526E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B7A123139E65D5004526E4 /* Foundation.framework */; };
+		B6B7A126139E65D5004526E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B7A125139E65D5004526E4 /* CoreGraphics.framework */; };
+		B6B7A128139E65D5004526E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B7A127139E65D5004526E4 /* CoreData.framework */; };
+		B6B7A12E139E65D5004526E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6B7A12C139E65D5004526E4 /* InfoPlist.strings */; };
+		B6B7A131139E65D5004526E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B7A130139E65D5004526E4 /* main.m */; };
+		B6B7A134139E65D5004526E4 /* ScheduleurAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B7A133139E65D5004526E4 /* ScheduleurAppDelegate.m */; };
+		B6B7A137139E65D5004526E4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B7A135139E65D5004526E4 /* MainWindow.xib */; };
+		B6B7A13A139E65D5004526E4 /* Scheduleur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6B7A138139E65D5004526E4 /* Scheduleur.xcdatamodeld */; };
+		B6D82DE513A7C20F008212EB /* MOUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DDE13A7C20F008212EB /* MOUtility.m */; };
+		B6D82DE613A7C20F008212EB /* MOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DE013A7C20F008212EB /* MOButton.m */; };
+		B6D82DE713A7C20F008212EB /* MOGlassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DE213A7C20F008212EB /* MOGlassButton.m */; };
+		B6D82DE813A7C20F008212EB /* VTPG_Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DE413A7C20F008212EB /* VTPG_Common.m */; };
+		B6D82DEC13A7C241008212EB /* EKEvent+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DEB13A7C241008212EB /* EKEvent+NSCoding.m */; };
+		B6D82DF313A7C25B008212EB /* BumpAPIAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D82DEF13A7C25B008212EB /* BumpAPIAssets.bundle */; };
+		B6D82DF413A7C25B008212EB /* libBumpAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82DF213A7C25B008212EB /* libBumpAPI.a */; };
+		B6D82DF813A7C28F008212EB /* CalendarBumpConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DF713A7C28F008212EB /* CalendarBumpConnector.m */; };
+		B6D82E0713A7C36F008212EB /* BumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DFC13A7C36F008212EB /* BumpViewController.m */; };
+		B6D82E0813A7C36F008212EB /* BumpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D82DFD13A7C36F008212EB /* BumpViewController.xib */; };
+		B6D82E0913A7C36F008212EB /* CustomEKEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82DFF13A7C36F008212EB /* CustomEKEventViewController.m */; };
+		B6D82E0A13A7C36F008212EB /* ScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E0113A7C36F008212EB /* ScheduleView.m */; };
+		B6D82E0B13A7C36F008212EB /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E0313A7C36F008212EB /* ScheduleViewController.m */; };
+		B6D82E0C13A7C36F008212EB /* ScheduleOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E0513A7C36F008212EB /* ScheduleOptionsTableViewController.m */; };
+		B6D82E0D13A7C36F008212EB /* ScheduleOptionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E0613A7C36F008212EB /* ScheduleOptionsTableViewController.xib */; };
+		B6D82E1013A7C3DB008212EB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E0E13A7C3DB008212EB /* EventKit.framework */; };
+		B6D82E1113A7C3DB008212EB /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E0F13A7C3DB008212EB /* EventKitUI.framework */; };
+		B6D82E1413A7C3F7008212EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E1213A7C3F7008212EB /* CoreLocation.framework */; };
+		B6D82E1513A7C3F7008212EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E1313A7C3F7008212EB /* QuartzCore.framework */; };
+		B6D82E1713A7C404008212EB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E1613A7C404008212EB /* AudioToolbox.framework */; };
+		B6D82E1913A7C411008212EB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D82E1813A7C411008212EB /* libsqlite3.dylib */; };
+		B6D82E2413A7C4BE008212EB /* scheduleur.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E1C13A7C4BE008212EB /* scheduleur.png */; };
+		B6D82E2513A7C4BE008212EB /* scheduleur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E1D13A7C4BE008212EB /* scheduleur@2x.png */; };
+		B6D82E2613A7C4BE008212EB /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E1E13A7C4BE008212EB /* calendar.png */; };
+		B6D82E2713A7C4BE008212EB /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E1F13A7C4BE008212EB /* calendar@2x.png */; };
+		B6D82E2813A7C4BE008212EB /* calendar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2013A7C4BE008212EB /* calendar_icon.png */; };
+		B6D82E2913A7C4BE008212EB /* calendar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2113A7C4BE008212EB /* calendar_icon@2x.png */; };
+		B6D82E2A13A7C4BE008212EB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2213A7C4BE008212EB /* icon.png */; };
+		B6D82E2B13A7C4BE008212EB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2313A7C4BE008212EB /* icon@2x.png */; };
+		B6D82E3113A7C574008212EB /* RecentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E2E13A7C574008212EB /* RecentsViewController.m */; };
+		B6D82E3213A7C574008212EB /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3013A7C574008212EB /* EventTableViewCell.m */; };
+		B6D82E3613A7C700008212EB /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */; };
+		B6D82E3C13A7C72A008212EB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3913A7C72A008212EB /* Event.m */; };
+		B6D82E3D13A7C72A008212EB /* Event_CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3B13A7C72A008212EB /* Event_CoreData.m */; };
+		B6D82E4813A7CF31008212EB /* SharedEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E4713A7CF31008212EB /* SharedEventStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B61FFE1313A86A5700E8BED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = TapkuLibrary;
+		};
+		B61FFE1513A86A5700E8BED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3B45DDF1134C736600D24C1A;
+			remoteInfo = LogicTests;
+		};
+		B660C7D713A86AE2001B383B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = TapkuLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B61FFDF113A8697D00E8BED0 /* TapkuLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapkuLibrary.bundle; sourceTree = "<group>"; };
+		B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../../../workspace/tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = "<group>"; };
+		B660C7D913A86AFB001B383B /* libTapkuLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTapkuLibrary.a; sourceTree = SOURCE_ROOT; };
+		B660C7DB13A86AFB001B383B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B6A9734413A9491400948618 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B6A9734513A9491400948618 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B6A9734813A94AD500948618 /* gear_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear_icon.png; sourceTree = "<group>"; };
+		B6A9734A13A94AED00948618 /* gear_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear_icon@2x.png"; sourceTree = "<group>"; };
+		B6B7A11D139E65D5004526E4 /* Scheduleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scheduleur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B7A121139E65D5004526E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6B7A123139E65D5004526E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6B7A125139E65D5004526E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6B7A127139E65D5004526E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6B7A12B139E65D5004526E4 /* Scheduleur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scheduleur-Info.plist"; sourceTree = "<group>"; };
+		B6B7A12D139E65D5004526E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6B7A12F139E65D5004526E4 /* Scheduleur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scheduleur-Prefix.pch"; sourceTree = "<group>"; };
+		B6B7A130139E65D5004526E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6B7A132139E65D5004526E4 /* ScheduleurAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleurAppDelegate.h; sourceTree = "<group>"; };
+		B6B7A133139E65D5004526E4 /* ScheduleurAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleurAppDelegate.m; sourceTree = "<group>"; };
+		B6B7A136139E65D5004526E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B6B7A139139E65D5004526E4 /* Scheduleur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scheduleur.xcdatamodel; sourceTree = "<group>"; };
+		B6D82DDD13A7C20F008212EB /* MOUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOUtility.h; sourceTree = "<group>"; };
+		B6D82DDE13A7C20F008212EB /* MOUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOUtility.m; sourceTree = "<group>"; };
+		B6D82DDF13A7C20F008212EB /* MOButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButton.h; sourceTree = "<group>"; };
+		B6D82DE013A7C20F008212EB /* MOButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOButton.m; sourceTree = "<group>"; };
+		B6D82DE113A7C20F008212EB /* MOGlassButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOGlassButton.h; sourceTree = "<group>"; };
+		B6D82DE213A7C20F008212EB /* MOGlassButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOGlassButton.m; sourceTree = "<group>"; };
+		B6D82DE313A7C20F008212EB /* VTPG_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPG_Common.h; sourceTree = "<group>"; };
+		B6D82DE413A7C20F008212EB /* VTPG_Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPG_Common.m; sourceTree = "<group>"; };
+		B6D82DEA13A7C241008212EB /* EKEvent+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EKEvent+NSCoding.h"; sourceTree = "<group>"; };
+		B6D82DEB13A7C241008212EB /* EKEvent+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EKEvent+NSCoding.m"; sourceTree = "<group>"; };
+		B6D82DEE13A7C25B008212EB /* BumpAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpAPI.h; sourceTree = "<group>"; };
+		B6D82DEF13A7C25B008212EB /* BumpAPIAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BumpAPIAssets.bundle; sourceTree = "<group>"; };
+		B6D82DF013A7C25B008212EB /* BumpAPICustomUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpAPICustomUI.h; sourceTree = "<group>"; };
+		B6D82DF113A7C25B008212EB /* Bumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bumper.h; sourceTree = "<group>"; };
+		B6D82DF213A7C25B008212EB /* libBumpAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBumpAPI.a; sourceTree = "<group>"; };
+		B6D82DF613A7C28F008212EB /* CalendarBumpConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarBumpConnector.h; sourceTree = "<group>"; };
+		B6D82DF713A7C28F008212EB /* CalendarBumpConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarBumpConnector.m; sourceTree = "<group>"; };
+		B6D82DFB13A7C36F008212EB /* BumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BumpViewController.h; sourceTree = "<group>"; };
+		B6D82DFC13A7C36F008212EB /* BumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BumpViewController.m; sourceTree = "<group>"; };
+		B6D82DFD13A7C36F008212EB /* BumpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BumpViewController.xib; sourceTree = "<group>"; };
+		B6D82DFE13A7C36F008212EB /* CustomEKEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEKEventViewController.h; sourceTree = "<group>"; };
+		B6D82DFF13A7C36F008212EB /* CustomEKEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEKEventViewController.m; sourceTree = "<group>"; };
+		B6D82E0013A7C36F008212EB /* ScheduleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleView.h; sourceTree = "<group>"; };
+		B6D82E0113A7C36F008212EB /* ScheduleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleView.m; sourceTree = "<group>"; };
+		B6D82E0213A7C36F008212EB /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		B6D82E0313A7C36F008212EB /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		B6D82E0413A7C36F008212EB /* ScheduleOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleOptionsTableViewController.h; sourceTree = "<group>"; };
+		B6D82E0513A7C36F008212EB /* ScheduleOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleOptionsTableViewController.m; sourceTree = "<group>"; };
+		B6D82E0613A7C36F008212EB /* ScheduleOptionsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleOptionsTableViewController.xib; sourceTree = "<group>"; };
+		B6D82E0E13A7C3DB008212EB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B6D82E0F13A7C3DB008212EB /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		B6D82E1213A7C3F7008212EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6D82E1313A7C3F7008212EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B6D82E1613A7C404008212EB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B6D82E1813A7C411008212EB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B6D82E1C13A7C4BE008212EB /* scheduleur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scheduleur.png; sourceTree = "<group>"; };
+		B6D82E1D13A7C4BE008212EB /* scheduleur@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scheduleur@2x.png"; sourceTree = "<group>"; };
+		B6D82E1E13A7C4BE008212EB /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		B6D82E1F13A7C4BE008212EB /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		B6D82E2013A7C4BE008212EB /* calendar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_icon.png; sourceTree = "<group>"; };
+		B6D82E2113A7C4BE008212EB /* calendar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_icon@2x.png"; sourceTree = "<group>"; };
+		B6D82E2213A7C4BE008212EB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B6D82E2313A7C4BE008212EB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		B6D82E2D13A7C574008212EB /* RecentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsViewController.h; sourceTree = "<group>"; };
+		B6D82E2E13A7C574008212EB /* RecentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsViewController.m; sourceTree = "<group>"; };
+		B6D82E2F13A7C574008212EB /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		B6D82E3013A7C574008212EB /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		B6D82E3413A7C700008212EB /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		B6D82E3813A7C72A008212EB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		B6D82E3913A7C72A008212EB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		B6D82E3A13A7C72A008212EB /* Event_CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event_CoreData.h; sourceTree = "<group>"; };
+		B6D82E3B13A7C72A008212EB /* Event_CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event_CoreData.m; sourceTree = "<group>"; };
+		B6D82E4613A7CF30008212EB /* SharedEventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedEventStore.h; sourceTree = "<group>"; };
+		B6D82E4713A7CF31008212EB /* SharedEventStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedEventStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6B7A11A139E65D5004526E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B660C7DC13A86AFB001B383B /* MapKit.framework in Frameworks */,
+				B660C7DA13A86AFB001B383B /* libTapkuLibrary.a in Frameworks */,
+				B6D82E1713A7C404008212EB /* AudioToolbox.framework in Frameworks */,
+				B6D82E1413A7C3F7008212EB /* CoreLocation.framework in Frameworks */,
+				B6D82E1513A7C3F7008212EB /* QuartzCore.framework in Frameworks */,
+				B6D82E1013A7C3DB008212EB /* EventKit.framework in Frameworks */,
+				B6D82E1113A7C3DB008212EB /* EventKitUI.framework in Frameworks */,
+				B6B7A122139E65D5004526E4 /* UIKit.framework in Frameworks */,
+				B6B7A124139E65D5004526E4 /* Foundation.framework in Frameworks */,
+				B6B7A126139E65D5004526E4 /* CoreGraphics.framework in Frameworks */,
+				B6B7A128139E65D5004526E4 /* CoreData.framework in Frameworks */,
+				B6D82E1913A7C411008212EB /* libsqlite3.dylib in Frameworks */,
+				B6D82DF413A7C25B008212EB /* libBumpAPI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B61FFDE613A868E000E8BED0 /* Tapku Library */ = {
+			isa = PBXGroup;
+			children = (
+				B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */,
+				B61FFDF113A8697D00E8BED0 /* TapkuLibrary.bundle */,
+			);
+			name = "Tapku Library";
+			sourceTree = "<group>";
+		};
+		B61FFE0C13A86A5600E8BED0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B61FFE1413A86A5700E8BED0 /* libTapkuLibrary.a */,
+				B61FFE1613A86A5700E8BED0 /* LogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B7A112139E65D4004526E4 = {
+			isa = PBXGroup;
+			children = (
+				B6B7A129139E65D5004526E4 /* Scheduleur */,
+				B6B7A120139E65D5004526E4 /* Frameworks */,
+				B6B7A11E139E65D5004526E4 /* Products */,
+				B6D82E1A13A7C4A2008212EB /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		B6B7A11E139E65D5004526E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6B7A11D139E65D5004526E4 /* Scheduleur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B7A120139E65D5004526E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E1613A7C404008212EB /* AudioToolbox.framework */,
+				B6D82E1213A7C3F7008212EB /* CoreLocation.framework */,
+				B6D82E1313A7C3F7008212EB /* QuartzCore.framework */,
+				B6D82E0E13A7C3DB008212EB /* EventKit.framework */,
+				B6D82E0F13A7C3DB008212EB /* EventKitUI.framework */,
+				B660C7DB13A86AFB001B383B /* MapKit.framework */,
+				B6B7A121139E65D5004526E4 /* UIKit.framework */,
+				B6B7A123139E65D5004526E4 /* Foundation.framework */,
+				B6B7A125139E65D5004526E4 /* CoreGraphics.framework */,
+				B6B7A127139E65D5004526E4 /* CoreData.framework */,
+				B6D82E1813A7C411008212EB /* libsqlite3.dylib */,
+				B660C7D913A86AFB001B383B /* libTapkuLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6B7A129139E65D5004526E4 /* Scheduleur */ = {
+			isa = PBXGroup;
+			children = (
+				B61FFDE613A868E000E8BED0 /* Tapku Library */,
+				B6D82DDC13A7C1F8008212EB /* Glass Buttons */,
+				B6D82E3313A7C6E6008212EB /* Core Data */,
+				B6D82DED13A7C246008212EB /* Bump API */,
+				B6D82DE913A7C228008212EB /* EventKit Additions */,
+				B6D82DF513A7C275008212EB /* Calendar Bump Connector */,
+				B6D82DF913A7C350008212EB /* Schedule MVC */,
+				B6D82E2C13A7C555008212EB /* Recents MVC */,
+				B6B7A132139E65D5004526E4 /* ScheduleurAppDelegate.h */,
+				B6B7A133139E65D5004526E4 /* ScheduleurAppDelegate.m */,
+				B6B7A135139E65D5004526E4 /* MainWindow.xib */,
+				B6B7A138139E65D5004526E4 /* Scheduleur.xcdatamodeld */,
+				B6B7A12A139E65D5004526E4 /* Supporting Files */,
+				B6D82E4613A7CF30008212EB /* SharedEventStore.h */,
+				B6D82E4713A7CF31008212EB /* SharedEventStore.m */,
+			);
+			path = Scheduleur;
+			sourceTree = "<group>";
+		};
+		B6B7A12A139E65D5004526E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6B7A12B139E65D5004526E4 /* Scheduleur-Info.plist */,
+				B6B7A12C139E65D5004526E4 /* InfoPlist.strings */,
+				B6B7A12F139E65D5004526E4 /* Scheduleur-Prefix.pch */,
+				B6B7A130139E65D5004526E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D82DDC13A7C1F8008212EB /* Glass Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82DDD13A7C20F008212EB /* MOUtility.h */,
+				B6D82DDE13A7C20F008212EB /* MOUtility.m */,
+				B6D82DDF13A7C20F008212EB /* MOButton.h */,
+				B6D82DE013A7C20F008212EB /* MOButton.m */,
+				B6D82DE113A7C20F008212EB /* MOGlassButton.h */,
+				B6D82DE213A7C20F008212EB /* MOGlassButton.m */,
+				B6D82DE313A7C20F008212EB /* VTPG_Common.h */,
+				B6D82DE413A7C20F008212EB /* VTPG_Common.m */,
+			);
+			name = "Glass Buttons";
+			sourceTree = "<group>";
+		};
+		B6D82DE913A7C228008212EB /* EventKit Additions */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82DEA13A7C241008212EB /* EKEvent+NSCoding.h */,
+				B6D82DEB13A7C241008212EB /* EKEvent+NSCoding.m */,
+			);
+			name = "EventKit Additions";
+			sourceTree = "<group>";
+		};
+		B6D82DED13A7C246008212EB /* Bump API */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82DEE13A7C25B008212EB /* BumpAPI.h */,
+				B6D82DEF13A7C25B008212EB /* BumpAPIAssets.bundle */,
+				B6D82DF013A7C25B008212EB /* BumpAPICustomUI.h */,
+				B6D82DF113A7C25B008212EB /* Bumper.h */,
+				B6D82DF213A7C25B008212EB /* libBumpAPI.a */,
+			);
+			name = "Bump API";
+			sourceTree = "<group>";
+		};
+		B6D82DF513A7C275008212EB /* Calendar Bump Connector */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82DF613A7C28F008212EB /* CalendarBumpConnector.h */,
+				B6D82DF713A7C28F008212EB /* CalendarBumpConnector.m */,
+			);
+			name = "Calendar Bump Connector";
+			sourceTree = "<group>";
+		};
+		B6D82DF913A7C350008212EB /* Schedule MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82DFB13A7C36F008212EB /* BumpViewController.h */,
+				B6D82DFC13A7C36F008212EB /* BumpViewController.m */,
+				B6D82DFD13A7C36F008212EB /* BumpViewController.xib */,
+				B6D82DFE13A7C36F008212EB /* CustomEKEventViewController.h */,
+				B6D82DFF13A7C36F008212EB /* CustomEKEventViewController.m */,
+				B6D82E0013A7C36F008212EB /* ScheduleView.h */,
+				B6D82E0113A7C36F008212EB /* ScheduleView.m */,
+				B6D82E0213A7C36F008212EB /* ScheduleViewController.h */,
+				B6D82E0313A7C36F008212EB /* ScheduleViewController.m */,
+				B6D82E0413A7C36F008212EB /* ScheduleOptionsTableViewController.h */,
+				B6D82E0513A7C36F008212EB /* ScheduleOptionsTableViewController.m */,
+				B6D82E0613A7C36F008212EB /* ScheduleOptionsTableViewController.xib */,
+			);
+			name = "Schedule MVC";
+			sourceTree = "<group>";
+		};
+		B6D82E1A13A7C4A2008212EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E1B13A7C4A9008212EB /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6D82E1B13A7C4A9008212EB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9734813A94AD500948618 /* gear_icon.png */,
+				B6A9734A13A94AED00948618 /* gear_icon@2x.png */,
+				B6A9734413A9491400948618 /* Default.png */,
+				B6A9734513A9491400948618 /* Default@2x.png */,
+				B6D82E1C13A7C4BE008212EB /* scheduleur.png */,
+				B6D82E1D13A7C4BE008212EB /* scheduleur@2x.png */,
+				B6D82E1E13A7C4BE008212EB /* calendar.png */,
+				B6D82E1F13A7C4BE008212EB /* calendar@2x.png */,
+				B6D82E2013A7C4BE008212EB /* calendar_icon.png */,
+				B6D82E2113A7C4BE008212EB /* calendar_icon@2x.png */,
+				B6D82E2213A7C4BE008212EB /* icon.png */,
+				B6D82E2313A7C4BE008212EB /* icon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B6D82E2C13A7C555008212EB /* Recents MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E2D13A7C574008212EB /* RecentsViewController.h */,
+				B6D82E2E13A7C574008212EB /* RecentsViewController.m */,
+				B6D82E2F13A7C574008212EB /* EventTableViewCell.h */,
+				B6D82E3013A7C574008212EB /* EventTableViewCell.m */,
+			);
+			name = "Recents MVC";
+			sourceTree = "<group>";
+		};
+		B6D82E3313A7C6E6008212EB /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E3713A7C705008212EB /* Event */,
+				B6D82E3413A7C700008212EB /* CoreDataTableViewController.h */,
+				B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		B6D82E3713A7C705008212EB /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E3813A7C72A008212EB /* Event.h */,
+				B6D82E3913A7C72A008212EB /* Event.m */,
+				B6D82E3A13A7C72A008212EB /* Event_CoreData.h */,
+				B6D82E3B13A7C72A008212EB /* Event_CoreData.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6B7A11C139E65D5004526E4 /* Scheduleur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B7A13D139E65D5004526E4 /* Build configuration list for PBXNativeTarget "Scheduleur" */;
+			buildPhases = (
+				B6B7A119139E65D5004526E4 /* Sources */,
+				B6B7A11A139E65D5004526E4 /* Frameworks */,
+				B6B7A11B139E65D5004526E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B660C7D813A86AE2001B383B /* PBXTargetDependency */,
+			);
+			name = Scheduleur;
+			productName = Scheduleur;
+			productReference = B6B7A11D139E65D5004526E4 /* Scheduleur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6B7A114139E65D4004526E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Stanford University";
+			};
+			buildConfigurationList = B6B7A117139E65D4004526E4 /* Build configuration list for PBXProject "Scheduleur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6B7A112139E65D4004526E4;
+			productRefGroup = B6B7A11E139E65D5004526E4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B61FFE0C13A86A5600E8BED0 /* Products */;
+					ProjectRef = B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B6B7A11C139E65D5004526E4 /* Scheduleur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B61FFE1413A86A5700E8BED0 /* libTapkuLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTapkuLibrary.a;
+			remoteRef = B61FFE1313A86A5700E8BED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B61FFE1613A86A5700E8BED0 /* LogicTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LogicTests.octest;
+			remoteRef = B61FFE1513A86A5700E8BED0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6B7A11B139E65D5004526E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B7A12E139E65D5004526E4 /* InfoPlist.strings in Resources */,
+				B6B7A137139E65D5004526E4 /* MainWindow.xib in Resources */,
+				B6D82DF313A7C25B008212EB /* BumpAPIAssets.bundle in Resources */,
+				B6D82E0813A7C36F008212EB /* BumpViewController.xib in Resources */,
+				B6D82E0D13A7C36F008212EB /* ScheduleOptionsTableViewController.xib in Resources */,
+				B6D82E2413A7C4BE008212EB /* scheduleur.png in Resources */,
+				B6D82E2513A7C4BE008212EB /* scheduleur@2x.png in Resources */,
+				B6D82E2613A7C4BE008212EB /* calendar.png in Resources */,
+				B6D82E2713A7C4BE008212EB /* calendar@2x.png in Resources */,
+				B6D82E2813A7C4BE008212EB /* calendar_icon.png in Resources */,
+				B6D82E2913A7C4BE008212EB /* calendar_icon@2x.png in Resources */,
+				B6D82E2A13A7C4BE008212EB /* icon.png in Resources */,
+				B6D82E2B13A7C4BE008212EB /* icon@2x.png in Resources */,
+				B61FFDF213A8697D00E8BED0 /* TapkuLibrary.bundle in Resources */,
+				B6A9734613A9491400948618 /* Default.png in Resources */,
+				B6A9734713A9491400948618 /* Default@2x.png in Resources */,
+				B6A9734913A94AD600948618 /* gear_icon.png in Resources */,
+				B6A9734B13A94AED00948618 /* gear_icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6B7A119139E65D5004526E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B7A131139E65D5004526E4 /* main.m in Sources */,
+				B6B7A134139E65D5004526E4 /* ScheduleurAppDelegate.m in Sources */,
+				B6B7A13A139E65D5004526E4 /* Scheduleur.xcdatamodeld in Sources */,
+				B6D82DE513A7C20F008212EB /* MOUtility.m in Sources */,
+				B6D82DE613A7C20F008212EB /* MOButton.m in Sources */,
+				B6D82DE713A7C20F008212EB /* MOGlassButton.m in Sources */,
+				B6D82DE813A7C20F008212EB /* VTPG_Common.m in Sources */,
+				B6D82DEC13A7C241008212EB /* EKEvent+NSCoding.m in Sources */,
+				B6D82DF813A7C28F008212EB /* CalendarBumpConnector.m in Sources */,
+				B6D82E0713A7C36F008212EB /* BumpViewController.m in Sources */,
+				B6D82E0913A7C36F008212EB /* CustomEKEventViewController.m in Sources */,
+				B6D82E0A13A7C36F008212EB /* ScheduleView.m in Sources */,
+				B6D82E0B13A7C36F008212EB /* ScheduleViewController.m in Sources */,
+				B6D82E0C13A7C36F008212EB /* ScheduleOptionsTableViewController.m in Sources */,
+				B6D82E3113A7C574008212EB /* RecentsViewController.m in Sources */,
+				B6D82E3213A7C574008212EB /* EventTableViewCell.m in Sources */,
+				B6D82E3613A7C700008212EB /* CoreDataTableViewController.m in Sources */,
+				B6D82E3C13A7C72A008212EB /* Event.m in Sources */,
+				B6D82E3D13A7C72A008212EB /* Event_CoreData.m in Sources */,
+				B6D82E4813A7CF31008212EB /* SharedEventStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B660C7D813A86AE2001B383B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TapkuLibrary;
+			targetProxy = B660C7D713A86AE2001B383B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6B7A12C139E65D5004526E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6B7A12D139E65D5004526E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6B7A135139E65D5004526E4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6B7A136139E65D5004526E4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6B7A13B139E65D5004526E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6B7A13C139E65D5004526E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B6B7A13E139E65D5004526E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scheduleur/Scheduleur-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Scheduleur/Scheduleur-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Scheduleur\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6B7A13F139E65D5004526E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Scheduleur/Scheduleur-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Scheduleur/Scheduleur-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Scheduleur\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6B7A117139E65D4004526E4 /* Build configuration list for PBXProject "Scheduleur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B7A13B139E65D5004526E4 /* Debug */,
+				B6B7A13C139E65D5004526E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B7A13D139E65D5004526E4 /* Build configuration list for PBXNativeTarget "Scheduleur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B7A13E139E65D5004526E4 /* Debug */,
+				B6B7A13F139E65D5004526E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6B7A138139E65D5004526E4 /* Scheduleur.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6B7A139139E65D5004526E4 /* Scheduleur.xcdatamodel */,
+			);
+			currentVersion = B6B7A139139E65D5004526E4 /* Scheduleur.xcdatamodel */;
+			path = Scheduleur.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6B7A114139E65D4004526E4 /* Project object */;
+}
