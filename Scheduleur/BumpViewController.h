@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/3/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -21,7 +21,6 @@
     CalendarBumpConnector *bumpConn;
     ScheduleOptionsTableViewController *sotvc;
     
-    NSManagedObjectContext *managedObjectContext;
     UILabel *nameLabel;
     MOGlassButton *scheduleButton;
     
@@ -32,7 +31,6 @@
 
 @property (nonatomic, retain) CalendarBumpConnector *bumpConn;
 @property (nonatomic, assign) ScheduleOptionsTableViewController *sotvc;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
 @property (nonatomic, retain) IBOutlet MOGlassButton *scheduleButton;
@@ -40,8 +38,6 @@
 @property (nonatomic, retain) EKEvent *event;
 
 @property BOOL scheduling;
-
-- initInManagedObjectContext:(NSManagedObjectContext *)context;
 
 - (void)bumpConnectedWith:(Bumper *)otherBumper;
 - (void)startScheduling;

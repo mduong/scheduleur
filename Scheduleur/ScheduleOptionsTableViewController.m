@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/1/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "ScheduleOptionsTableViewController.h"
@@ -13,7 +13,7 @@ static dispatch_semaphore_t events_sema;
 
 @implementation ScheduleOptionsTableViewController
 
-@synthesize pickerView, nextButton, doneButton, loadingView, activityIndicatorView, dateFormatter, options, event, otherEvents, bumpConn, managedObjectContext;
+@synthesize pickerView, nextButton, doneButton, loadingView, activityIndicatorView, dateFormatter, options, event, otherEvents, bumpConn;
 
 + (void)initialize
 {
@@ -93,18 +93,12 @@ static dispatch_semaphore_t events_sema;
     [self setup];
 }
 
-- initInManagedObjectContext:(NSManagedObjectContext *)context
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (context) {
-        self = [super initWithNibName:@"ScheduleOptionsTableViewController" bundle:nil];
-        if (self) {
-            [self setup];
-            self.title = @"Options";
-            self.managedObjectContext = context;
-        }
-    } else {
-        [self release];
-        self = nil;
+    self = [super initWithNibName:@"ScheduleOptionsTableViewController" bundle:nibBundleOrNil];
+    if (self) {
+        [self setup];
+        self.title = @"Options";
     }
     return self;
 }
@@ -478,7 +472,6 @@ static dispatch_semaphore_t events_sema;
                 scheduleViewController.event = newEvent;
                 scheduleViewController.events = self.otherEvents;
                 scheduleViewController.bumpConn = self.bumpConn;
-                scheduleViewController.managedObjectContext = self.managedObjectContext;
                 self.bumpConn.scheduleViewController = scheduleViewController;
                 [self.navigationController pushViewController:scheduleViewController animated:YES];
                 [scheduleViewController release];
@@ -536,7 +529,6 @@ static dispatch_semaphore_t events_sema;
     [bumpConn release];
     [event release];
     [otherEvents release];
-    [managedObjectContext release];
     
     [super dealloc];
 }

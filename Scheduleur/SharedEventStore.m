@@ -3,7 +3,7 @@
 //  Scheduleur
 //
 //  Created by Michael Duong on 6/14/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "SharedEventStore.h"

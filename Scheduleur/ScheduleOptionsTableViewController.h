@@ -3,23 +3,21 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/1/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
 
-#import "CoreDataTableViewController.h"
 #import "CalendarBumpConnector.h"
-#import "Event_CoreData.h"
 #import "ScheduleViewController.h"
 #import "ScheduleView.h"
 #import "SharedEventStore.h"
 
 @class CalendarBumpConnector;
 
-@interface ScheduleOptionsTableViewController : CoreDataTableViewController {
+@interface ScheduleOptionsTableViewController : UITableViewController {
     UIDatePicker *pickerView;
     UIBarButtonItem *nextButton;
     UIBarButtonItem *doneButton;
@@ -28,8 +26,6 @@
     
     NSArray *otherEvents;    
     CalendarBumpConnector *bumpConn;
-    
-    NSManagedObjectContext *managedObjectContext;
 }
 
 @property (nonatomic, retain) IBOutlet UIDatePicker *pickerView;
@@ -51,10 +47,6 @@
 @property (nonatomic, retain) NSArray *otherEvents;
 
 @property (nonatomic, retain) CalendarBumpConnector *bumpConn;
-
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-
-- initInManagedObjectContext:(NSManagedObjectContext *)context;
 
 - (IBAction)nextAction:(id)sender;  // when the next button is clicked
 - (IBAction)doneAction:(id)sender;	// when the done button is clicked

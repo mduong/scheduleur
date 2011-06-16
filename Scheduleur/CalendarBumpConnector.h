@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 5/30/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -33,6 +33,7 @@
 @property (nonatomic, assign) ScheduleViewController *scheduleViewController;
 
 - (void)configBump;
+- (void)configUserName:(NSString *)userName;
 
 - (void)startScheduling;
 - (void)cancelScheduling;

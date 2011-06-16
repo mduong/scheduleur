@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 5/30/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "CalendarBumpConnector.h"
@@ -29,6 +29,12 @@
 	[bumpObject configDelegate:self];
 	[bumpObject configParentView:self.bumpViewController.view];
 	[bumpObject configActionMessage:@"Bump with another Scheduleur user to start scheduling."];
+}
+
+// Sets up the Bump username.
+- (void) configUserName:(NSString *)userName
+{
+    [bumpObject configUserName:userName];
 }
 
 // Starts a request for a Bump session.
@@ -215,7 +221,6 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Event Accepted" message:@"The event was accepted and saved!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-        [self.scheduleViewController.tabBarController setSelectedIndex:1];
         [self.bumpViewController resetState];
         [self.scheduleViewController.navigationController popToRootViewControllerAnimated:YES];
     } else if ([action isEqualToString:@"DECLINE"]) {

@@ -3,7 +3,7 @@
 //  Scheduleur
 //
 //  Created by Michael Duong on 6/7/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -3,14 +3,14 @@
 //  Scheduleur
 //
 //  Created by Michael Duong on 6/7/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "ScheduleurAppDelegate.h"
 
 #import "SharedEventStore.h"
 #import "BumpViewController.h"
-#import "RecentsViewController.h"
+#import "SettingsViewController.h"
 
 @implementation ScheduleurAppDelegate
 
@@ -30,17 +30,17 @@
     
     UITabBarController *tbc = [[UITabBarController alloc] init];
     
-    BumpViewController *bvc = [[BumpViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+    BumpViewController *bvc = [[BumpViewController alloc] init];
     UINavigationController *bvcNav = [[UINavigationController alloc] initWithRootViewController:bvc];
     [bvc release];
     
-    RecentsViewController *rvc = [[RecentsViewController alloc] initInManagedObjectContext:self.managedObjectContext];
-    UINavigationController *rvcNav = [[UINavigationController alloc] initWithRootViewController:rvc];
-    [rvc release];
+    SettingsViewController *svc = [[SettingsViewController alloc] init];
+    UINavigationController *svcNav = [[UINavigationController alloc] initWithRootViewController:svc];
+    [svc release];
     
-    tbc.viewControllers = [NSArray arrayWithObjects:bvcNav, rvcNav, nil];
+    tbc.viewControllers = [NSArray arrayWithObjects:bvcNav, svcNav, nil];
     [bvcNav release];
-    [rvcNav release];
+    [svcNav release];
     self.window.rootViewController = tbc;
     [tbc release];
     

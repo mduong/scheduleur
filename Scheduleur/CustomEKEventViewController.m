@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/4/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "CustomEKEventViewController.h"
@@ -11,7 +11,6 @@
 
 @implementation CustomEKEventViewController
 
-@synthesize managedObjectContext;
 @synthesize bumpConn;
 
 // Declines the event and sends a message to the other user.
@@ -44,29 +43,32 @@
         NSLog(@"ERROR: %@", error);
     }
     
-    [Event eventWithEKEvent:event userName:[[self.bumpConn otherBumper] userName] inManagedObjectContext:self.managedObjectContext];
-    
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.leftBarButtonItem = nil;
     self.navigationItem.rightBarButtonItem = nil;
     
     [self.bumpConn acceptEvent];
     
-    [self.tabBarController setSelectedIndex:1];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    EKEventEditViewController *eventEditViewController = [[EKEventEditViewController alloc] init];
+    eventEditViewController.eventStore = sharedEventStore.eventStore;
+    eventEditViewController.event = event;
+    eventEditViewController.editViewDelegate = self;
+    [self.navigationController presentModalViewController:eventEditViewController animated:YES];
+    [eventEditViewController release];
 }
 
-- initInManagedObjectContext:(NSManagedObjectContext *)context
+// Called when the user completes the editing of an event
+- (void)eventEditViewController:(EKEventEditViewController *)controller didCompleteWithAction:(EKEventEditViewAction)action
 {
-    if (context) {
-        self = [super init];
-        if (self) {
-            self.title = @"Event Details";
-            self.managedObjectContext = context;
-        }
-    } else {
-        [self release];
-        self = nil;
+    [self dismissModalViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"Event Details";
     }
     return self;
 }
@@ -83,7 +85,6 @@
 
 - (void)dealloc
 {
-    [managedObjectContext release];
     [bumpConn release];
     
     [super dealloc];

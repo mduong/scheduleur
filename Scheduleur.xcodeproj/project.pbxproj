@@ -10,6 +10,11 @@
 		B61FFDF213A8697D00E8BED0 /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B61FFDF113A8697D00E8BED0 /* TapkuLibrary.bundle */; };
 		B660C7DA13A86AFB001B383B /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B660C7D913A86AFB001B383B /* libTapkuLibrary.a */; };
 		B660C7DC13A86AFB001B383B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B660C7DB13A86AFB001B383B /* MapKit.framework */; };
+		B673D40613A94D6B00D9D8F3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B673D40413A94D6B00D9D8F3 /* SettingsViewController.m */; };
+		B673D40713A94D6B00D9D8F3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673D40513A94D6B00D9D8F3 /* SettingsViewController.xib */; };
+		B673D44B13A98D7000D9D8F3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B673D44A13A98D6F00D9D8F3 /* MessageUI.framework */; };
+		B673D45813A996E300D9D8F3 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B673D45613A996E300D9D8F3 /* InfoViewController.m */; };
+		B673D45913A996E300D9D8F3 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673D45713A996E300D9D8F3 /* InfoViewController.xib */; };
 		B6A9734613A9491400948618 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734413A9491400948618 /* Default.png */; };
 		B6A9734713A9491400948618 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734513A9491400948618 /* Default@2x.png */; };
 		B6A9734913A94AD600948618 /* gear_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9734813A94AD500948618 /* gear_icon.png */; };
@@ -52,11 +57,6 @@
 		B6D82E2913A7C4BE008212EB /* calendar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2113A7C4BE008212EB /* calendar_icon@2x.png */; };
 		B6D82E2A13A7C4BE008212EB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2213A7C4BE008212EB /* icon.png */; };
 		B6D82E2B13A7C4BE008212EB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D82E2313A7C4BE008212EB /* icon@2x.png */; };
-		B6D82E3113A7C574008212EB /* RecentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E2E13A7C574008212EB /* RecentsViewController.m */; };
-		B6D82E3213A7C574008212EB /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3013A7C574008212EB /* EventTableViewCell.m */; };
-		B6D82E3613A7C700008212EB /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */; };
-		B6D82E3C13A7C72A008212EB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3913A7C72A008212EB /* Event.m */; };
-		B6D82E3D13A7C72A008212EB /* Event_CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E3B13A7C72A008212EB /* Event_CoreData.m */; };
 		B6D82E4813A7CF31008212EB /* SharedEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D82E4713A7CF31008212EB /* SharedEventStore.m */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +89,13 @@
 		B61FFE0B13A86A5600E8BED0 /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../../../workspace/tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = "<group>"; };
 		B660C7D913A86AFB001B383B /* libTapkuLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTapkuLibrary.a; sourceTree = SOURCE_ROOT; };
 		B660C7DB13A86AFB001B383B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B673D40313A94D6B00D9D8F3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B673D40413A94D6B00D9D8F3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B673D40513A94D6B00D9D8F3 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		B673D44A13A98D6F00D9D8F3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B673D45513A996E300D9D8F3 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		B673D45613A996E300D9D8F3 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		B673D45713A996E300D9D8F3 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		B6A9734413A9491400948618 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B6A9734513A9491400948618 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B6A9734813A94AD500948618 /* gear_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear_icon.png; sourceTree = "<group>"; };
@@ -149,16 +156,6 @@
 		B6D82E2113A7C4BE008212EB /* calendar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_icon@2x.png"; sourceTree = "<group>"; };
 		B6D82E2213A7C4BE008212EB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B6D82E2313A7C4BE008212EB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		B6D82E2D13A7C574008212EB /* RecentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsViewController.h; sourceTree = "<group>"; };
-		B6D82E2E13A7C574008212EB /* RecentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsViewController.m; sourceTree = "<group>"; };
-		B6D82E2F13A7C574008212EB /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
-		B6D82E3013A7C574008212EB /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
-		B6D82E3413A7C700008212EB /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
-		B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
-		B6D82E3813A7C72A008212EB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		B6D82E3913A7C72A008212EB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		B6D82E3A13A7C72A008212EB /* Event_CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event_CoreData.h; sourceTree = "<group>"; };
-		B6D82E3B13A7C72A008212EB /* Event_CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event_CoreData.m; sourceTree = "<group>"; };
 		B6D82E4613A7CF30008212EB /* SharedEventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedEventStore.h; sourceTree = "<group>"; };
 		B6D82E4713A7CF31008212EB /* SharedEventStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedEventStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B673D44B13A98D7000D9D8F3 /* MessageUI.framework in Frameworks */,
 				B660C7DC13A86AFB001B383B /* MapKit.framework in Frameworks */,
 				B660C7DA13A86AFB001B383B /* libTapkuLibrary.a in Frameworks */,
 				B6D82E1713A7C404008212EB /* AudioToolbox.framework in Frameworks */,
@@ -205,6 +203,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B673D41D13A9842F00D9D8F3 /* Settings MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B673D40313A94D6B00D9D8F3 /* SettingsViewController.h */,
+				B673D40413A94D6B00D9D8F3 /* SettingsViewController.m */,
+				B673D40513A94D6B00D9D8F3 /* SettingsViewController.xib */,
+			);
+			name = "Settings MVC";
+			sourceTree = "<group>";
+		};
+		B673D45413A996C700D9D8F3 /* Info MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B673D45513A996E300D9D8F3 /* InfoViewController.h */,
+				B673D45613A996E300D9D8F3 /* InfoViewController.m */,
+				B673D45713A996E300D9D8F3 /* InfoViewController.xib */,
+			);
+			name = "Info MVC";
+			sourceTree = "<group>";
+		};
+		B6A9734C13A94CE900948618 /* Event Store */ = {
+			isa = PBXGroup;
+			children = (
+				B6D82E4613A7CF30008212EB /* SharedEventStore.h */,
+				B6D82E4713A7CF31008212EB /* SharedEventStore.m */,
+			);
+			name = "Event Store";
+			sourceTree = "<group>";
+		};
 		B6B7A112139E65D4004526E4 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +253,7 @@
 		B6B7A120139E65D5004526E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B673D44A13A98D6F00D9D8F3 /* MessageUI.framework */,
 				B6D82E1613A7C404008212EB /* AudioToolbox.framework */,
 				B6D82E1213A7C3F7008212EB /* CoreLocation.framework */,
 				B6D82E1313A7C3F7008212EB /* QuartzCore.framework */,
@@ -247,19 +275,18 @@
 			children = (
 				B61FFDE613A868E000E8BED0 /* Tapku Library */,
 				B6D82DDC13A7C1F8008212EB /* Glass Buttons */,
-				B6D82E3313A7C6E6008212EB /* Core Data */,
 				B6D82DED13A7C246008212EB /* Bump API */,
 				B6D82DE913A7C228008212EB /* EventKit Additions */,
 				B6D82DF513A7C275008212EB /* Calendar Bump Connector */,
 				B6D82DF913A7C350008212EB /* Schedule MVC */,
-				B6D82E2C13A7C555008212EB /* Recents MVC */,
+				B673D41D13A9842F00D9D8F3 /* Settings MVC */,
+				B673D45413A996C700D9D8F3 /* Info MVC */,
+				B6A9734C13A94CE900948618 /* Event Store */,
 				B6B7A132139E65D5004526E4 /* ScheduleurAppDelegate.h */,
 				B6B7A133139E65D5004526E4 /* ScheduleurAppDelegate.m */,
 				B6B7A135139E65D5004526E4 /* MainWindow.xib */,
 				B6B7A138139E65D5004526E4 /* Scheduleur.xcdatamodeld */,
 				B6B7A12A139E65D5004526E4 /* Supporting Files */,
-				B6D82E4613A7CF30008212EB /* SharedEventStore.h */,
-				B6D82E4713A7CF31008212EB /* SharedEventStore.m */,
 			);
 			path = Scheduleur;
 			sourceTree = "<group>";
@@ -366,38 +393,6 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		B6D82E2C13A7C555008212EB /* Recents MVC */ = {
-			isa = PBXGroup;
-			children = (
-				B6D82E2D13A7C574008212EB /* RecentsViewController.h */,
-				B6D82E2E13A7C574008212EB /* RecentsViewController.m */,
-				B6D82E2F13A7C574008212EB /* EventTableViewCell.h */,
-				B6D82E3013A7C574008212EB /* EventTableViewCell.m */,
-			);
-			name = "Recents MVC";
-			sourceTree = "<group>";
-		};
-		B6D82E3313A7C6E6008212EB /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				B6D82E3713A7C705008212EB /* Event */,
-				B6D82E3413A7C700008212EB /* CoreDataTableViewController.h */,
-				B6D82E3513A7C700008212EB /* CoreDataTableViewController.m */,
-			);
-			name = "Core Data";
-			sourceTree = "<group>";
-		};
-		B6D82E3713A7C705008212EB /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				B6D82E3813A7C72A008212EB /* Event.h */,
-				B6D82E3913A7C72A008212EB /* Event.m */,
-				B6D82E3A13A7C72A008212EB /* Event_CoreData.h */,
-				B6D82E3B13A7C72A008212EB /* Event_CoreData.m */,
-			);
-			name = Event;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -490,6 +485,8 @@
 				B6A9734713A9491400948618 /* Default@2x.png in Resources */,
 				B6A9734913A94AD600948618 /* gear_icon.png in Resources */,
 				B6A9734B13A94AED00948618 /* gear_icon@2x.png in Resources */,
+				B673D40713A94D6B00D9D8F3 /* SettingsViewController.xib in Resources */,
+				B673D45913A996E300D9D8F3 /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,12 +511,9 @@
 				B6D82E0A13A7C36F008212EB /* ScheduleView.m in Sources */,
 				B6D82E0B13A7C36F008212EB /* ScheduleViewController.m in Sources */,
 				B6D82E0C13A7C36F008212EB /* ScheduleOptionsTableViewController.m in Sources */,
-				B6D82E3113A7C574008212EB /* RecentsViewController.m in Sources */,
-				B6D82E3213A7C574008212EB /* EventTableViewCell.m in Sources */,
-				B6D82E3613A7C700008212EB /* CoreDataTableViewController.m in Sources */,
-				B6D82E3C13A7C72A008212EB /* Event.m in Sources */,
-				B6D82E3D13A7C72A008212EB /* Event_CoreData.m in Sources */,
 				B6D82E4813A7CF31008212EB /* SharedEventStore.m in Sources */,
+				B673D40613A94D6B00D9D8F3 /* SettingsViewController.m in Sources */,
+				B673D45813A996E300D9D8F3 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +559,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -579,7 +573,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -589,6 +583,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -605,6 +601,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -613,6 +610,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scheduleur/Scheduleur-Prefix.pch";
@@ -628,6 +627,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

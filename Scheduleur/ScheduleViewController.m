@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/4/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "ScheduleViewController.h"
@@ -19,7 +19,6 @@
 @synthesize scrollView, scheduleView;
 @synthesize event, events;
 @synthesize bumpConn;
-@synthesize managedObjectContext;
 
 // Lazy-instantiation for the schedule view.
 - (ScheduleView *)scheduleView
@@ -102,8 +101,6 @@
 {
     SharedEventStore *sharedEventStore = [SharedEventStore sharedInstance];
     
-    [[Event eventWithEKEvent:event userName:[[bumpConn otherBumper] userName] inManagedObjectContext:self.managedObjectContext] remove];
-    
     NSError *error = nil;
     [sharedEventStore.eventStore removeEvent:event span:EKSpanThisEvent error:&error];
     self.event = nil;
@@ -112,16 +109,11 @@
     [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:count - 3] animated:YES];
 }
 
-- (id)initInManagedObjectContext:(NSManagedObjectContext *)context
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (context) {
-        self = [super init];
-        if (self) {
-            self.managedObjectContext = context;
-        }
-    } else {
-        [self release];
-        self = nil;
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
     }
     return self;
 }
@@ -141,14 +133,6 @@
         [eventViewController release];
         // Send the proposed event to the other user.
         [bumpConn sendEvent:self.event];
-        
-        NSError *error = nil;
-        
-        if (error) {
-            NSLog(@"ERROR: %@", error);
-        }
-        
-        [Event eventWithEKEvent:event userName:[[self.bumpConn otherBumper] userName] inManagedObjectContext:self.managedObjectContext];
     }
 }
 
@@ -158,7 +142,6 @@
     [events release];
     [scheduleView release];
     [bumpConn release];
-    [managedObjectContext release];
     
     [super dealloc];
 }

@@ -3,7 +3,7 @@
 //  SmartSchedulr
 //
 //  Created by Michael Duong on 6/3/11.
-//  Copyright 2011 Ambitiouxs Software. All rights reserved.
+//  Copyright 2011 Ambitiouxs. All rights reserved.
 //
 
 #import "BumpViewController.h"
@@ -11,7 +11,7 @@
 
 @implementation BumpViewController
 
-@synthesize bumpConn, sotvc, managedObjectContext, nameLabel, scheduleButton, scheduling, event;
+@synthesize bumpConn, sotvc, nameLabel, scheduleButton, scheduling, event;
 
 // Lazy-instantiation for the Bump connection object.
 - (CalendarBumpConnector *)bumpConn
@@ -28,7 +28,7 @@
 - (ScheduleOptionsTableViewController *)sotvc
 {
     if (!sotvc) {
-        sotvc = [[ScheduleOptionsTableViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+        sotvc = [[ScheduleOptionsTableViewController alloc] init];
         sotvc.bumpConn = self.bumpConn;
         self.bumpConn.scheduleOptionsViewController = sotvc;
     }
@@ -40,7 +40,7 @@
 // user the event and let them accept/decline it.
 - (void)setEvent:(EKEvent *)newEvent
 {
-    CustomEKEventViewController *eventViewController = [[CustomEKEventViewController alloc] initInManagedObjectContext:self.managedObjectContext];
+    CustomEKEventViewController *eventViewController = [[CustomEKEventViewController alloc] init];
     eventViewController.bumpConn = self.bumpConn;
     eventViewController.event = newEvent;
     [self.navigationController pushViewController:eventViewController animated:YES];
@@ -100,17 +100,11 @@
     [self setup];
 }
 
-- initInManagedObjectContext:(NSManagedObjectContext *)context
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (context) {
-        self = [super init];
-        if (self) {
-            [self setup];
-            self.managedObjectContext = context;
-        }
-    } else {
-        [self release];
-        self = nil;
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self setup];
     }
     return self;
 }
@@ -140,12 +134,19 @@
         [self.bumpConn cancelScheduling];
         [self resetState];
         self.scheduling = NO;
+    } else {
+        NSString *userName = [[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
+        if (userName && [userName length] > 0) {
+            [self.bumpConn configUserName:userName];
+        }
     }
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self.bumpConn startBump];
+    if (![self.bumpConn bumpConnected]) {
+        [self.bumpConn startBump];
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -172,7 +173,6 @@
     [scheduleButton release];
     [event release];
     [bumpConn release];
-    [managedObjectContext release];
     
     [super dealloc];
 }
